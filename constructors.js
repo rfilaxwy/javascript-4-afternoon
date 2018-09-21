@@ -14,6 +14,12 @@
 */
 
 // Code here
+class CarFactory{
+  constructor(make, model){
+    this.make=make;
+    this.model=model;
+  }
+}
 
 
 
@@ -34,10 +40,21 @@ function Employee(name, email, hireDate) {
 
 // Code here
 
-
+const bob = new Employee('Bob','bob@gmail.com','01-02-98');
 
 ////////// PROBLEM 4 //////////
-
+class Car{
+  constructor(make,model,year){
+    this.make=make;
+    this.model=model;
+    this.year=year;
+    this.move=0;
+  }
+  moveCar(){
+    return this.move+=10
+  }
+  
+}
 // Do not edit the code below.
 var prius = new Car('Toyota', 'Prius', 2011);
 var mustang = new Car('Ford', 'Mustang', 2013);
